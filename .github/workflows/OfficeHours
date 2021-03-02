@@ -1,0 +1,20 @@
+#Ask how many hours were worked.
+hours = float(input("Enter office hours worked:  "))
+
+# If the hours were worked offsite perform the following function.
+def offsiteCost():
+    Hours = hours * 60
+    print(f"The total amount for your offsite visit is ${Hours}")
+
+# If the hours were worked onsite perfome the following function.
+def officeCost():
+    Hours = hours * 40
+    print(f"The total amount for your onsite visit is ${Hours}")
+
+# Ask whether this was on or offiste and print the proper amount.
+ans = input("Is this an offsite visit? Type y or n to proceed:  ")
+if ans == "y":
+    offsiteCost()
+else:
+    officeCost()
+    
